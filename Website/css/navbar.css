@@ -1,0 +1,221 @@
+/* importing fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+/* @font-face {
+	font-family: Overcame;
+	src: url(fonts/Overcame/*);
+	font-family: Binary;
+	src: url(fonts/Binary/*);
+} */
+/* Variables */
+:root {
+  --font-family: "Roboto Slab", serif;
+  --normal-font: 400;
+  --bold-font: 700;
+  --bolder-font: 900;
+  --primary-color: #619ddd;
+  --secondary-color: #ecb8d0;
+  --primary-shadow: #8b8eaf;
+  --secondary-shadow: #a17a69;
+  --bg-color: #fcfcfc;
+  --transition: 0.3s;
+}
+.welcomeTxt {
+  padding-top: 2.125rem;
+  font-family: "Righteous", cursive;
+  font-size: 3rem;
+  text-align: center;
+  letter-spacing: 2px;
+}
+#codechef {
+  opacity: 50%;
+  padding-top: 0.1rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  font-size: 1.2rem; /* use this to change font size of navbar  */
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+body {
+  font-family: var(--font-family);
+}
+
+/*
+nav {
+  display: flex;
+  position: sticky;
+  z-index: 1;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--bg-color);
+  padding: 1.5rem 3rem;
+  box-shadow: 0px 4px 20px 6px rgb(0 0 0 / 50%);
+  background-color: #1a242e;
+  width: 100%;
+  font-size: 24px;
+  font-family: "Audiowide";
+  height: 3.5rem;
+}
+
+.logo-cc {
+  height: 3rem;
+  width: 3rem;
+}
+
+.logo-cc img {
+  height: 7rem;
+  width: 7rem;
+}
+
+nav a {
+  color: var(--primary-color);
+  transition: var(--transition);
+}
+
+nav a:hover {
+  color: orange;
+}
+
+nav ul {
+  display: flex;
+  gap: 3.4rem; change this to change the gap between the navbar items
+  flex-wrap: wrap;
+}
+
+nav.active {
+  display: flex;
+  position: sticky;
+  z-index: 1;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--bg-color);
+  padding: 1.5rem 3rem;
+  box-shadow: 0px 4px 20px 6px rgb(0 0 0 / 50%);
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); to change the color of nav bar after scroll replace the background-color from here
+  width: 100%;
+  font-size: 24px;
+  font-family: "Audiowide";
+  height: 3.5rem;
+}
+
+.nav-items {
+  width: 50%;
+}
+
+*/
+
+/*------------------------------------------*/
+/*------------------------------------------*/
+/*------------------------------------------*/
+/*------------------------------------------*/
+
+/* .main_header_section {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999999;
+} */
+
+.main-header {
+  box-shadow: 0px 4px 20px 6px rgb(0 0 0 / 50%);
+  background-color: #1a242e;
+  /* box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1); */
+}
+
+.mh-logo {
+  margin: 0 0 -10px;
+}
+
+.main-nav a {
+  font-size: 0.85em;
+  font-family: "Audiowide";
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #619ddd;
+  text-decoration: none;
+}
+.main-nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Flex & layout things:
+ * — Mobile first
+ * — Responsive
+ */
+.mh-logo img {
+  max-width: 100%;
+  height: auto;
+  padding: 0.5rem 0 1.5rem 0;
+}
+
+.container {
+  width: 95%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.main-header .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.main-nav ul {
+  margin: 1em 0 0.5em;
+  text-align: center;
+}
+
+.main-nav li {
+  display: inline;
+}
+
+.main-nav li a {
+  transition: var(--transition);
+}
+
+.main-nav li a:hover {
+  color: orange;
+}
+
+.main-nav a {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+}
+
+@media (min-width: 960px) {
+  .main-header .container {
+    justify-content: space-between;
+  }
+}
